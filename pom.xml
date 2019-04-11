@@ -109,13 +109,7 @@
 				 <configuration>
         			<mainClass>sprintBootdemoproject.mainJavaClass</mainClass>
    			 	</configuration>
-   			 	<executions>
-        <execution>
-            <goals>
-                <goal>repackage</goal>
-            </goals>
-        </execution>
-    </executions>
+   			 	
 
 			</plugin>
 
@@ -126,16 +120,6 @@
                 <artifactId>maven-war-plugin</artifactId>
 
 
-
-                <configuration>
-
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-
-                    <outputDirectory>target</outputDirectory>
-
-              		  <warName>ROOT</warName>
-
-                </configuration>
 
             </plugin>
             <plugin>
