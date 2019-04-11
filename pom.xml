@@ -3,7 +3,7 @@
   <groupId>com.sundar.example</groupId>
   <artifactId>sprintBootdemoproject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+<packaging>war</packaging>
  <parent>
 
 		<groupId>org.springframework.boot</groupId>
@@ -106,6 +106,16 @@
 				<groupId>org.springframework.boot</groupId>
 
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				 <configuration>
+        			<mainClass>sprintBootdemoproject.mainJavaClass</mainClass>
+   			 	</configuration>
+   			 	<executions>
+        <execution>
+            <goals>
+                <goal>repackage</goal>
+            </goals>
+        </execution>
+    </executions>
 
 			</plugin>
 
@@ -115,7 +125,7 @@
 
                 <artifactId>maven-war-plugin</artifactId>
 
-                <version>2.3</version>
+
 
                 <configuration>
 
